@@ -1,0 +1,17 @@
+logging:
+  level:
+    org.springframework.web.client.RestTemplate: DEBUG
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          saltpay:
+            authorization-grant-type: client_credentials
+            client-id:  demo-backend-client
+            client-secret:  "MJlO3binatD9jk1"
+            ui_locales: en
+        provider:
+          saltpay:
+            issuer-uri: https://login-demo.curity.io/oauth/v2/oauth-anonymous
+resource-url: http://localhost:8080/test-server
